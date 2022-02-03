@@ -44,4 +44,11 @@ code {
 }
 .note-btn {
   align-self: flex-end;
+  font-size: 2rem;
+  cursor: pointer;
+  color: grey;
+  transition: color 0.5s;
+}
+.note-btn:hover {
+  color: black
 }
