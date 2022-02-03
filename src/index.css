@@ -30,7 +30,6 @@ code {
 /* Note Styling */
 .note {
   background-color: #fef68a;
-  width: 15rem;
   padding: 1rem 1.2rem;
   margin: 1.2rem;
   height: 15rem;
@@ -42,13 +41,41 @@ code {
   flex-direction: column;
   justify-content: space-between;
 }
+.add-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #67d7cc;
+  padding: 1rem 1.2rem;
+  margin: 1.2rem;
+  height: 15rem;
+  border-radius: 0.8rem;
+  box-shadow: 0px 0px 5px 0.5px black;
+  width:75%;
+  
+}
 .note-btn {
   align-self: flex-end;
-  font-size: 2rem;
+  font-size: 1.8rem;
   cursor: pointer;
   color: grey;
   transition: color 0.5s;
 }
 .note-btn:hover {
   color: black
+}
+.btn-special {
+  align-self: flex-end;
+  font-size: 1.2rem;
+  border: none;
+  color: black;
+  padding:0.2rem 0.8rem;
+  border-radius:0.4rem ;
+}
+/* textarea */
+.add-note_textarea {
+  border: 2px solid red;
+  resize: none;
+  outline: none;
+  background-color: transparent;
 }

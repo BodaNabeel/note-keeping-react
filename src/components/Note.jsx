@@ -13,14 +13,6 @@ export default function Note({  notes, setNotes }) {
         return (
           <div key={el.id} className="note">
             <p className="note-text">{el.text}</p>
-            {/* <button
-              className="note-btn"
-              onClick={() => {
-                handleDelete(el.id);
-              }}
-            >
-              del
-            </button> */}
               <MdDelete className="note-btn" onClick={() => {handleDelete(el.id)}} />
           </div>
         );
