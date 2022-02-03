@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* NoteList Styling  */
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Note Styling */
+.note {
+  background-color:  #fef68a;
+  width: 15rem;
+  padding: 1rem 2rem;
+  margin: 1.2rem;
+}
+.note-btn {
+  float: right;
+}
