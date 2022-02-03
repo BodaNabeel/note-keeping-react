@@ -1,8 +1,12 @@
-function App() {
-  return (
-    <div>
+import { useState } from "react";
+import NoteList from "./components/NoteList";
 
-    </div>
+function App() {
+  const [note, setNote] = useState(null);
+  return (
+   <>
+  <NoteList/>
+   </>
   );
 }
 
