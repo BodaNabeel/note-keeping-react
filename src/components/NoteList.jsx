@@ -1,8 +1,9 @@
 import React from 'react';
+import Note from './Note';
 
 export default function NoteList() {
   return (
-      "working"
+      <Note/>
   )
 }
 
