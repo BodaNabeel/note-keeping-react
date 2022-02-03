@@ -9,6 +9,18 @@ function App() {
       id: uuidv4(),
     },
     {
+      text: "i'm learning re!",
+      id: uuidv4(),
+    },
+    {
+      text: "i'm learning reactjs and i's really fun and i'm enjoying the process on the way yooo!!!",
+      id: uuidv4(),
+    },
+    {
+      text: "i'm learning reactjs and i's really fun and i'm enjoying the process on the way yooo!!!",
+      id: uuidv4(),
+    },
+    {
       text: "i'm learning reactjs and i's really fun and i'm enjoying the process on the way yooo!!!",
       id: uuidv4(),
     },
