@@ -1,12 +1,10 @@
 import React from "react";
 import Note from "./Note";
 
-export default function NoteList({ note }) {
+export default function NoteList({ notes, setNotes }) {
   return (
     <div className="note-list">
-      {note.map((note) => {
-        return <Note id={note.id} text={note.text} />;
-      })}
+      <Note notes={notes} setNotes={setNotes}/>
     </div>
   );
 }
