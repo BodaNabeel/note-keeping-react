@@ -1,11 +1,27 @@
 import React from "react";
-export default function Note({ id, text }) {
+export default function Note({ id, text, notes, setNotes }) {
+  const handleDelete = (key) => {
+    const updatedNotes = notes.filter((notes) => notes.id !== key);
+    setNotes(updatedNotes);
+  };
+
   return (
     <>
-      <div className="note" key={id} >
-        <p className="note-text" id={id}>{text}</p>
-        <button className="note-btn" id={id}>del</button>
-      </div>
+      {notes.map((el) => {
+        return (
+          <div key={el.id} className="note">
+            <p className="note-text">{el.text}</p>
+            <button
+              className="note-btn"
+              onClick={() => {
+                handleDelete(el.id);
+              }}
+            >
+              del
+            </button>
+          </div>
+        );
+      })}
     </>
   );
 }
