@@ -71,10 +71,11 @@ code {
   color: black;
   padding:0.2rem 0.8rem;
   border-radius:0.4rem ;
+  cursor: pointer;
 }
 /* textarea */
 .add-note_textarea {
-  border: 2px solid red;
+  border: none;
   resize: none;
   outline: none;
   background-color: transparent;

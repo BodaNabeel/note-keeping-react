@@ -6,7 +6,7 @@ export default function NoteList({ notes, setNotes }) {
   return (
     <div className="note-list">
       <Note notes={notes} setNotes={setNotes}/>
-      <AddNote />
+      <AddNote setNotes={setNotes} notes={notes} />
     </div>
   );
 }
