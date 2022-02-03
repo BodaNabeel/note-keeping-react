@@ -1,10 +1,12 @@
-import React from 'react';
-import Note from './Note';
+import React from "react";
+import Note from "./Note";
 
-export default function NoteList() {
+export default function NoteList({ note }) {
   return (
-      <Note/>
-  )
+    <div className="note-list">
+      {note.map((note) => {
+        return <Note id={note.id} text={note.text} />;
+      })}
+    </div>
+  );
 }
-
-

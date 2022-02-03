@@ -1,6 +1,12 @@
-import React from 'react';
+import React from "react";
 
-export default function Note() {
-  return <div>coming from Note.jsx</div>;
+export default function Note({ id, text }) {
+  return (
+    <>
+      <div className="note">
+        <p className="note-text">{text}</p>
+        <button>del</button>
+      </div>
+    </>
+  );
 }
-
