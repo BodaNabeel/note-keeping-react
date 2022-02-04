@@ -19,12 +19,8 @@ code {
 
   max-width: 80rem;
   margin: 0 auto;
-  /* margin-right: 4rem; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem,max-content));
-  gap: 1.2rem
-  /* margin-left: 10rem; */
-  /* justify-self: center; */
+  grid-template-columns: repeat(auto-fit, minmax(14rem, max-content));
 }
 
 /* Note Styling */
@@ -35,7 +31,7 @@ code {
   height: 15rem;
   border-radius: 0.8rem;
   box-shadow: 0px 0px 5px 0.5px black;
-  width:75%;
+  width: 75%;
 
   display: flex;
   flex-direction: column;
@@ -51,8 +47,7 @@ code {
   height: 15rem;
   border-radius: 0.8rem;
   box-shadow: 0px 0px 5px 0.5px black;
-  width:75%;
-  
+  width: 75%;
 }
 .note-btn {
   align-self: flex-end;
@@ -62,15 +57,15 @@ code {
   transition: color 0.5s;
 }
 .note-btn:hover {
-  color: black
+  color: black;
 }
 .btn-special {
   align-self: flex-end;
   font-size: 1.2rem;
   border: none;
   color: black;
-  padding:0.2rem 0.8rem;
-  border-radius:0.4rem ;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.4rem;
   cursor: pointer;
 }
 /* textarea */
@@ -79,4 +74,29 @@ code {
   resize: none;
   outline: none;
   background-color: transparent;
+}
+
+/* search handler */
+.search-handler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 2rem;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.search-handler >  * {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+.search-handler__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-left: 0.5rem;
 }
