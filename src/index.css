@@ -21,7 +21,7 @@ code {
   margin: 0 auto;
   /* margin-right: 4rem; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(14rem,max-content));
   gap: 1.2rem
   /* margin-left: 10rem; */
   /* justify-self: center; */
