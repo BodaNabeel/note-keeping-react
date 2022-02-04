@@ -5,8 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
+ 
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -99,4 +100,26 @@ code {
   border: none;
   outline: none;
   margin-left: 0.5rem;
+}
+
+/* footer */
+footer {
+  align-self: flex-end;
+  justify-self: flex-end;
+  width:100vw;
+  bottom: 0;
+  background-color: red;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+.link {
+  color: black;
+  text-decoration: none;
+}
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }

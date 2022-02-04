@@ -41,13 +41,28 @@ function App() {
   ]);
   return (
     <>
-      <Search setSearchText={setSearchText} />
-      <NoteList
-        notes={notes.filter((notes) =>
-          notes.text.toLowerCase().includes(searchText.toLowerCase())
-        )}
-        setNotes={setNotes}
-      />
+      <div className="flex-wrapper">
+        <div className="main-content">
+          <Search setSearchText={setSearchText} />
+          <NoteList
+            notes={notes.filter((notes) =>
+              notes.text.toLowerCase().includes(searchText.toLowerCase())
+            )}
+            setNotes={setNotes}
+          />
+        </div>
+        <footer>
+          made with ❤ by
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="link"
+            href="https://www.twitter.com/bodanabeel"
+          >
+            BodaNabeel
+          </a>
+        </footer>
+      </div>
     </>
   );
 }
