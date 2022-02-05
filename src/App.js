@@ -52,7 +52,7 @@ function App() {
           />
         </div>
         <footer>
-          made with ❤ by
+          <span>made with ❤ by </span>
           <a
             target="_blank"
             rel="noreferrer"
