@@ -5,8 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
- 
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -15,40 +13,34 @@ code {
 
 /* NoteList Styling  */
 .note-list {
-  /* display: flex;
-  flex-wrap: wrap; */
-
-  max-width: 80rem;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, max-content));
+  /* max-width: 80rem; */
+  /* justify-content: space-evenly */
+  justify-content: center;
+  /* max-width: 80rem; */
 }
 
 /* Note Styling */
-.note {
-  background-color: #fef68a;
-  padding: 1rem 1.2rem;
-  margin: 1.2rem;
-  height: 15rem;
-  border-radius: 0.8rem;
-  box-shadow: 0px 0px 5px 0.5px black;
-  width: 75%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+.note,
 .add-note {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #67d7cc;
-  padding: 1rem 1.2rem;
+  width: 15rem;
   margin: 1.2rem;
   height: 15rem;
   border-radius: 0.8rem;
   box-shadow: 0px 0px 5px 0.5px black;
-  width: 75%;
+  padding: 1rem 1.2rem;
+}
+
+.note {
+  background-color: #fef68a;
+}
+.add-note {
+  background-color: #67d7cc;
 }
 .note-btn {
   align-self: flex-end;
@@ -91,7 +83,7 @@ code {
   border-radius: 0.5rem;
   overflow: hidden;
 }
-.search-handler >  * {
+.search-handler > * {
   margin-left: 0.5rem;
   font-size: 1.5rem;
 }
@@ -106,13 +98,12 @@ code {
 footer {
   align-self: flex-end;
   justify-self: flex-end;
-  width:100vw;
+  width: 100vw;
   bottom: 0;
   background-color: #fef68a;
   padding: 1rem;
   text-align: center;
   margin-bottom: 0;
- 
 }
 .link {
   color: black;
