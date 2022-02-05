@@ -8,6 +8,8 @@ export default function AddNote({ notes, setNotes }) {
     setText(e.target.value);
   };
   const handleAdd = () => {
+    console.log(textarea.current.value.trim())
+    console.log(textarea.current.value.trim().length)
     if (textarea.current.value.trim().length > 0) {
       setNotes((prevState) => {
         return [
@@ -29,8 +31,6 @@ export default function AddNote({ notes, setNotes }) {
         <textarea
           ref={textarea}
           className="add-note_textarea"
-          cols="30"
-          rows="10"
           maxLength="200"
           onChange={(e) => {
             getValue(e);
