@@ -31,6 +31,7 @@ export default function AddNote({ notes, setNotes }) {
           className="add-note_textarea"
           cols="30"
           rows="10"
+          maxLength="200"
           onChange={(e) => {
             getValue(e);
           }}
