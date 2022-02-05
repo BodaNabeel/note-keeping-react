@@ -36,7 +36,6 @@ export default function AddNote({ notes, setNotes }) {
             getValue(e);
           }}
           placeholder="enter new note..."
-          maxLength={200}
         ></textarea>
         <button className="btn-special" onClick={handleAdd}>
           add
